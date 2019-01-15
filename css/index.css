@@ -1,1 +1,321 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Merriweather", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Merriweather", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* my code */
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+header {
+  top: 0;
+  position: absolute;
+  background: #fff;
+  z-index: 10;
+  width: 100%;
+  height: 375px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
+}
+
+header nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+
+.nav-links {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+#cta {
+  margin-top: 375px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-wrapped .text-div {
+  width: 100%;
+  text-align: center;
+}
+
+.item-wrapped-image {
+  display: none;
+}
+
+.button {
+  margin-top: 3rem;
+  background: #fff;
+  font-size: 1rem;
+  width: 10rem;
+  height: 2.5rem;
+  border: 1px black solid;
+}
+
+.middle-img {
+  width: 100%;
+  padding: 2%;
+}
+
+article {
+  padding: 5%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+footer {
+  padding: 7%;
+}
+
+#home-information-section div {
+  padding: 2%;
+}
+
+.info-section,
+.services-section {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 500px) {
+  header {
+    position: fixed;
+    height: 120px;
+  }
+
+  header nav {
+    flex-direction: column-reverse;
+  }
+
+  .nav-links {
+    width: 80%;
+    flex-direction: row;
+    border-bottom: none;
+  }
+
+  .nav-link {
+    border-top: none;
+  }
+
+  #cta {
+    margin-top: 120px;
+  }
+
+  .info-section,
+  .services-section {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  header {
+    padding: 0 5%;
+    height: 80px;
+  }
+
+  header nav {
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #cta {
+    height: 100vh;
+    margin-top: 80px;
+    padding: 0 5%;
+  }
+
+  .item-wrapped {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .item-wrapped-image {
+    display: flex;
+  }
+}
