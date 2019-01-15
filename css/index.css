@@ -229,6 +229,12 @@ header nav {
   align-items: center;
   text-decoration: none;
   color: #000;
+  transition: all 400ms;
+}
+
+.nav-link:hover {
+    color: #4885ed;
+    transform: scale(1.05);
 }
 
 #cta {
@@ -250,10 +256,18 @@ header nav {
 
 .button {
   margin-top: 3%;
-  background: #fff;
+  color: #fff;
+  background: #4885ed;
   width: 15rem;
   height: 5rem;
-  border: 1px black solid;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.2);
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,.4);
 }
 
 .middle-img {
