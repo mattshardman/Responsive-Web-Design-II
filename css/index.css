@@ -257,6 +257,7 @@ footer {
   flex-direction: column;
 }
 
+/* tablet */
 @media (min-width: 500px) {
   header {
     position: fixed;
@@ -287,6 +288,7 @@ footer {
   }
 }
 
+/* desktop */
 @media (min-width: 800px) {
   h1 {
     font-size: 4rem;
