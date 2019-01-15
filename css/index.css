@@ -277,7 +277,7 @@ article {
 }
 
 footer {
-    padding: 5% 2%;
+  padding: 5% 2%;
 }
 /* tablet */
 @media (min-width: 500px) {
@@ -316,6 +316,26 @@ footer {
 
 /* desktop */
 @media (min-width: 800px) {
+  .main-img {
+    animation-duration: 1s;
+    animation-name: spin;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .button {
+      transform: scale(1.2);
+      transition: transform 1s;
+  }
+
   h1 {
     font-size: 7rem;
   }
@@ -329,6 +349,7 @@ footer {
     padding: 0;
     flex-direction: row;
     justify-content: space-between;
+    transition: flex-direction 1s;
   }
 
   #cta {
@@ -344,5 +365,9 @@ footer {
 
   .item-wrapped-image {
     display: flex;
+  }
+
+  footer {
+      padding: 2%;
   }
 }
