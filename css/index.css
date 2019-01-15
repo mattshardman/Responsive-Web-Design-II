@@ -175,10 +175,19 @@ small {
 a {
   font-size: 1.5rem;
 }
+
 p,
 button,
 li {
   font-size: 1.6rem;
+}
+
+#cta,
+article,
+footer {
+  margin: 0 auto;
+  max-width: 880px;
+  padding: 3% 0;
 }
 
 header {
@@ -242,7 +251,7 @@ header nav {
 .button {
   margin-top: 3%;
   background: #fff;
-  width: 25%;
+  width: 15rem;
   height: 5rem;
   border: 1px black solid;
 }
@@ -252,19 +261,13 @@ header nav {
   padding: 2%;
 }
 
-#cta, article, footer {
-    margin: 0 auto;
-    max-width: 880px;
-    padding: 3% 0;
-}
-
 article {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 
 #home-information-section div {
-  padding: 2%;
+  padding: 3%;
 }
 
 .info-section,
@@ -273,6 +276,9 @@ article {
   flex-direction: column;
 }
 
+footer {
+    padding: 5% 2%;
+}
 /* tablet */
 @media (min-width: 500px) {
   header {
@@ -301,6 +307,10 @@ article {
   .info-section,
   .services-section {
     flex-direction: row;
+  }
+
+  footer {
+    padding: 3%;
   }
 }
 
