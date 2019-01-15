@@ -152,16 +152,33 @@ h5 {
 
 /* my code */
 
+html {
+  font-size: 62.5%;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: 6rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 small {
-  font-size: 0.75rem;
+  font-size: 1.2rem;
+}
+
+a {
+  font-size: 1.5rem;
+}
+p,
+button,
+li {
+  font-size: 1.6rem;
 }
 
 header {
@@ -224,11 +241,10 @@ header nav {
 }
 
 .button {
-  margin-top: 3rem;
+  margin-top: 3%;
   background: #fff;
-  font-size: 1rem;
-  width: 10rem;
-  height: 2.5rem;
+  width: 25%;
+  height: 5rem;
   border: 1px black solid;
 }
 
@@ -244,7 +260,7 @@ article {
 }
 
 footer {
-  padding: 7%;
+  padding: 5%;
 }
 
 #home-information-section div {
@@ -291,7 +307,7 @@ footer {
 /* desktop */
 @media (min-width: 800px) {
   h1 {
-    font-size: 4rem;
+    font-size: 8rem;
   }
 
   header {
@@ -307,7 +323,7 @@ footer {
 
   #cta {
     height: 100vh;
-    margin-top: 80px;
+    margin-top: 0px;
     padding: 0 5%;
   }
 
